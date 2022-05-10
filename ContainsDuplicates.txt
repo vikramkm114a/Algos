@@ -1,0 +1,18 @@
+//Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+
+var containsDuplicate = function(nums) {
+    //create a memory
+    //go through array & see if what i see now, is something Ive seen before
+        //if my num is never seen before, put in memory
+        //if my num does exist in memory, return true
+    
+    let memory = [];
+    for (let i=0; i < nums.length; i++) {
+        if(memory[nums[i]] === undefined){
+            memory[nums[i]] = i;
+        } else {
+            return true;
+        }
+    }
+};
