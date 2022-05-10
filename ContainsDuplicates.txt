@@ -6,13 +6,16 @@ var containsDuplicate = function(nums) {
     //go through array & see if what i see now, is something Ive seen before
         //if my num is never seen before, put in memory
         //if my num does exist in memory, return true
+     
     
-    let memory = [];
+    var containsDuplicate = function(nums) 
+    let memory = {};
     for (let i=0; i < nums.length; i++) {
-        if(memory[nums[i]] === undefined){
-            memory[nums[i]] = i;
+        if(!memory[nums[i]]){
+            memory[nums[i]] = true;
         } else {
             return true;
         }
     }
+    return false
 };
