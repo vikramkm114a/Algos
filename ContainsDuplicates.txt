@@ -8,7 +8,7 @@ var containsDuplicate = function(nums) {
         //if my num does exist in memory, return true
      
     
-    var containsDuplicate = function(nums) 
+ var containsDuplicate = function(nums) 
     let memory = {};
     for (let i=0; i < nums.length; i++) {
         if(!memory[nums[i]]){
